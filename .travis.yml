@@ -8,4 +8,4 @@ before_install:
   - docker build -t priyankpuri/docker-try -f Dockerfile.dev .
 
   script:
-    - docker run priyankpuri/docker-try npm run test -- --coverage
+    - docker run CI=true priyankpuri/docker-try npm run test -- --coverage
