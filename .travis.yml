@@ -1,8 +1,7 @@
+language: generic
 sudo: required
 services:
   - docker
-
-language: generic 
 
 before_install:
   - docker build -t priyankpuri/docker-try -f Dockerfile.dev .
